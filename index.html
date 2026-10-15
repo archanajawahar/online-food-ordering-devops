@@ -1,1 +1,152 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Food Ordering Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #e85d04;
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+    }
+
+    nav {
+      background: #333;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    h2 {
+      color: #d9480f;
+    }
+
+    .categories, .restaurants, .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #00000015;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .price {
+      color: #d9480f;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QuickBite</h1>
+    <p>Online Food Ordering Portal</p>
+  </header>
+
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#offers">Offers</a>
+  </nav>
+
+  <main>
+    <section id="categories">
+      <h2>Food Categories</h2>
+      <div class="categories">
+        <div class="card">🍕 Pizza</div>
+        <div class="card">🍔 Burgers</div>
+        <div class="card">🍜 Chinese</div>
+        <div class="card">🍛 Indian</div>
+      </div>
+    </section>
+
+    <section id="restaurants">
+      <h2>Featured Restaurants</h2>
+      <div class="restaurants">
+        <div class="card">
+          <h3>Spice Garden</h3>
+          <p>Indian cuisine and traditional meals.</p>
+          <p class="price">Meals from ₹149</p>
+        </div>
+        <div class="card">
+          <h3>Pizza Palazzo</h3>
+          <p>Fresh pizzas and cheesy sides.</p>
+          <p class="price">Pizzas from ₹199</p>
+        </div>
+        <div class="card">
+          <h3>Dragon Wok</h3>
+          <p>Chinese noodles and rice dishes.</p>
+          <p class="price">Meals from ₹169</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers">
+      <h2>Special Offers</h2>
+      <div class="offers">
+        <div class="card">
+          <h3>FLAT50</h3>
+          <p>Get ₹50 off your order.</p>
+        </div>
+        <div class="card">
+          <h3>FREEDEL</h3>
+          <p>Enjoy free delivery.</p>
+        </div>
+        <div class="card">
+          <h3>COMBO20</h3>
+          <p>Save on selected combo meals.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>QuickBite - Online Food Ordering Portal</p>
+  </footer>
+</body>
+</html>
